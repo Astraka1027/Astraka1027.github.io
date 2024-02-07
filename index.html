@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/portfolio.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <div class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#slideshow">Slideshow</a>
+        <a href="#about">About</a>
+        <a href="#github">GitHub</a>
+        <a href="#linkedin">LinkedIn</a>
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+    </div>
+    <!-- END NAV -->
+
+    <!-- Spacing between navbar and heading -->
+    <br>
+    <br>
+
+    <!-- HOME -->
+    <div id="home">
+
+        <!-- BACKGROUND VIDEO -->
+        <div id="background-video">
+            <video autoplay muted loop id="coding_video">
+                <source src="./img/video/video.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- VIDEO TEXT -->
+        <div class="video-text">
+            <h1 class="white-text">Amber Straka's Portfolio</h1>
+            <p class="center">
+                <q>Data isn’t units of information.
+                    <br>Data is a story about human behavior - about real people's wants, needs, goals and fears. 
+					Never let the numbers, platforms, charts and methodologies cloud your vision. 
+					Our real job with data is to better understand these very human stories, 
+					so we can better serve these people. 
+					Every goal your business has is directly tied to your success in understanding and serving people.
+                </q>
+                <br> - Daniel Burstein
+                <br>
+                <br> My name is Amber Straka. Welcome to my portfolio website.
+                <br>
+                <br>Thanks for visiting!
+            </p>
+        </div>
+
+    </div>
+    <!-- END HOME -->
+
+    <!-- SLIDESHOW -->
+    <div id="slideshow">
+        <div id="slideshow_background">
+            <div id="slideshow_container">
+                <!--Slide 1/5-->
+                <div class="mySlides fade">
+                    <img class="slideshow_images" src="./img/me.jpg" alt="Picture of myself">
+                    <div class="text">I'm ready to assist you with data science!</div>
+                </div>
+				<!--Slide 2/5-->
+                <div class="mySlides fade">
+                    <img class="slideshow_images" src="./img/Python.png" alt="Python logo">
+                    <div class="text">I am a Data Scientist<br> trained in:<br>Python including statistical modeling with Pandas, ScikitLearn, Matplotlib, and other libraries</div>
+                </div>
+				<!--Slide 3/5-->
+                <div class="mySlides fade">
+                    <img class="slideshow_images" src="./img/SQL_and_Database.jpg" alt="SQL logo">
+                    <div class="text">Big Data, RDMSs and SQL</div>
+                </div>
+                <!--Slide 4/5-->
+                <div class="mySlides fade">
+                    <img class="slideshow_images" src="./img/HTML_CSS_and_JavaScript.jpeg"
+                        alt="HTML, CSS, and JS logos">
+                    <div class="text">Web development with HTML, CSS, JavaScript
+                    </div>
+                </div>
+                <!--Slide 5/5-->
+                <div class="mySlides fade">
+                    <img class="slideshow_images" src="./img/contact.jpg" alt="Business card">
+                    <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                </div>
+                <!--Previous and next buttons-->
+                <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!--Slideshow dots-->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </div>
+    <!-- END SLIDESHOW -->
+
+    <!-- ABOUT -->
+    <div class="row" id="about">
+
+        <!-- LEFT COLUMN -->
+        <div class="column1">
+            <img src="./img/portland.jpg" alt="Portland">
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="column2">
+            <h1 class="sub_header">About</h1>
+            <p>
+                I am a graduate from
+                <a href="https://www.learncodinganywhere.com" target="_blank">
+                    The Tech Academy</a>'s Data Science Boot Camp and a member of <a href="https://www.womenindata.org/" target="_blank">
+                    Women in Data.</a>
+                <br>
+                <br> When not coding I enjoy building with Lego and supporting my favorite NWSL team the Portland Thorns.
+                <br>
+                <br>I am excited to create real value and 
+				promote data-driven decision making with my new skillset.
+            </p>
+        </div>
+    </div>
+    <!-- END ABOUT -->
+
+    <!-- GITHUB -->
+    <div class="row" id="github">
+
+        <!-- LEFT COLUMN -->
+        <div class="column2">
+            <h1 class="sub_header">GitHub</h1>
+            <p>
+                You can view examples of my work on my GitHub profile here:
+                <br>
+            <p class="center"><a href="https://github.com/Astraka1027" target="_blank">My GitHub</a>
+            </p>
+            <p class="center"><a href="https://github.com/Astraka1027/DataScienceProjects/tree/main/Python/exploratoryDataAnalysis">Diamonds and Exploratory Data Analysis</a>
+            </p>
+            <p class="center"><a href="https://github.com/Astraka1027/DataScienceProjects/tree/main/Python/loanAnalysis">Home Loans and Predictive Modeling</a>
+            </p>
+			<p class="center"><a href="https://github.com/Astraka1027/SQL/tree/main/Zoo" target="_blank">Zoos and SQL</a>
+            </p>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="column1">
+            <a href="https://github.com/Astraka1027" target="_blank">
+                <img src="./img/GitHub.png" alt="GitHub logo">
+            </a>
+        </div>
+
+    </div>
+    <!-- END GITHUB -->
+
+    <!-- LINKEDIN AND RESUME -->
+    <div class="row" id="linkedin">
+
+        <!-- LEFT COLUMN -->
+        <div class="column1">
+            <a href="https://www.linkedin.com/in/amber-straka/" target="_blank">
+                <img src="./img/LinkedIn.png" alt="LinkedIn logo" class="linkedin-logo">
+            </a>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="column2">
+            <h1 class="sub_header">LinkedIn</h1>
+            <p>
+                Connect with me on LinkedIn and check out my résumé:
+                <br>
+            <p class="center"><a href="https://www.linkedin.com/in/amber-straka/" target="_blank">LinkedIn</a>
+            </p>
+            <p class="center"><a
+                    href="https://docs.google.com/document/d/1DI5tqMqhcfUAADeyF6fYXLwdhWwHcwKeaLsuhK9XS6U/edit?usp=sharing">Résumé</a>
+            </p>
+        </div>
+
+    </div>
+    <!-- END LINKEDIN AND RESUME -->
+
+    <!-- CONTACT -->
+    <div id="contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm">
+            <!-- CONTACT FORM -->
+            <form action="https://formspree.io/f/mbjweadr" method="POST" class="form-container">
+                <h1>Contact</h1>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Please enter your name here" name="name" required>
+                <label for="email">Email:</label>
+                <input type="text" id="Email" name="Email" placeholder="Please enter your email here" name="email"
+                    required>
+                <label for="message">Message:</label>
+                <input type="text" id="Message" name="Message" placeholder="Please enter your message here"
+                    name="message">
+
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- END CONTACT -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+        <p class="center">
+            Amber Straka &nbsp;|&nbsp; 2024
+        </p>
+        </p>
+    </footer>
+
+</body>
+
+</html>
